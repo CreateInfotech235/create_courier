@@ -47,6 +47,8 @@ app.use(responseHandler);
 // const { startSocketServer } = require('./src/controller/socketController')
 
 app.use(routes);
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 const { ENV } = process.env;
 
